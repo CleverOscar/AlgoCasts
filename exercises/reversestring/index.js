@@ -6,17 +6,10 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// Loop through string characters and returns reverse_string
-// function reverse(str) {
-//   let reversed = "";
-//
-//   for (let character of str){
-//     reversed = character + reversed
-//     debugger
-//   }
-//
-//   return reversed
-// }
+function reverse(str) {
+  return str.split('').reverse().join('')
+}
+
 
 
 //Basic Built-In Reverse Function
