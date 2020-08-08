@@ -10,7 +10,7 @@ test('Node is a class', () => {
   expect(typeof Node.prototype.constructor).toEqual('function');
 });
 
-describe('A Node', () => {
+describe.skip('A Node', () => {
   test('has properties "data" and "next"', () => {
     const node = new Node('a', 'b');
     expect(node.data).toEqual('a');
@@ -18,7 +18,7 @@ describe('A Node', () => {
   });
 });
 
-describe('Insert First', () => {
+describe.skip('Insert First', () => {
   test('appends a node to the start of the list', () => {
     const l = new List();
     l.insertFirst(1);
@@ -28,7 +28,7 @@ describe('Insert First', () => {
   });
 });
 
-describe('Size', () => {
+describe.skip('Size', () => {
   test('returns the number of items in the linked list', () => {
     const l = new List();
     expect(l.size()).toEqual(0);
@@ -40,7 +40,7 @@ describe('Size', () => {
   });
 });
 
-describe('GetFirst', () => {
+describe.skip('GetFirst', () => {
   test('returns the first element', () => {
     const l = new List();
     l.insertFirst(1);
